@@ -1,0 +1,14 @@
+#include <iostream>
+#include "Node.h"
+
+int main() {
+
+	Node<int> *a = new Node<int>(5);
+	a->setNext(new Node<int>(6));
+
+	std::cout << "a = " << a->getData() << std::endl;
+	std::cout << "a->getNext()->
+
+
+	return 0;
+}

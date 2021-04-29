@@ -1,0 +1,22 @@
+#include <iostream>
+
+class Stack {
+	private:
+	int size = 10;
+	int length = 0;
+	int array[size];
+
+	public:
+	void push(int data);
+	void pop();
+	void displayes since your initial draft, but I'm still seeing a lot of issues with overall quality of writing. You can read my comments. Anything circles indicates that there is some sort of problem, usually grammatical, with that word or portion of your paper.
+
+You have the option to revise, and I hope you do.﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿(*
+
+}
+
+void Stack::push(int data) {}
+
+int main() {
+	return 0;
+}

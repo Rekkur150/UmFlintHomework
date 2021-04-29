@@ -1,0 +1,21 @@
+{"cities":[{"time":"2020-01-12T01:13:04.044Z","data":{"name":"Hello"}}]}
+
+
+code that deals with file retrieval and writing.
+
+var testObject = {
+	cities:[]
+}
+
+var data = function(time, data) {
+	this.time = time;
+	this.data = data;
+}
+
+var Flint = new data(new Date(), {name:"Hello"});
+
+testObject.cities.push(Flint);
+
+Fs.writeFile("./logs.txt", JSON.stringify(testObject), "utf8", (err) => {
+	if (err) throw err;
+});

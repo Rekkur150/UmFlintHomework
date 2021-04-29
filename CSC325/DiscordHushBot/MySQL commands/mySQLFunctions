@@ -1,0 +1,49 @@
+
+
+DELIMITER //
+
+CREATE PROCEDURE addWord(IN Cword VARCHAR(20))
+
+BEGIN
+IF EXISTS(SELECT * FROM words.common_words WHERE word = Cword) THEN UPDATE words.common_words SET used = used + 1 WHERE word = Cword;
+ELSE INSERT INTO words.common_words (word,used,flagged) VALUES (Cword,0,0);
+END IF;
+END //
+DELIMITER ;
+
+DELIMITER //
+
+CREATE PROCEDURE flagWord(IN Cword VARCHAR(20))
+
+BEGIN
+IF EXISTS(SELECT * FROM words.common_words WHERE word = Cword) THEN UPDATE words.common_words SET flagged = flagged + 1 WHERE word = Cword;
+END IF;
+END //
+DELIMITER ;
+
+
+
+
+DELIMITER //
+
+CREATE PROCEDURE addWords(IN Aword VARCHAR(20), IN Bword VARCHAR(20))
+
+BEGIN
+IF EXISTS(SELECT * FROM words.word_order WHERE postword = Bword AND preword = Aword) THEN UPDATE words.word_order SET used = used + 1 WHERE postword = Bword AND preword = Aword;
+ELSE INSERT INTO words.word_order (preword,postword,used,flagged) VALUES (Aword,Bword,0,0);
+END IF;
+END //
+
+DELIMITER ;
+
+
+DELIMITER //
+
+CREATE PROCEDURE flagWords(IN Aword VARCHAR(20), IN Bword VARCHAR(20))
+
+BEGIN
+IF EXISTS(SELECT * FROM words.word_order WHERE postword = Bword AND preword = Aword) THEN UPDATE words.word_order SET flagged = flagged + 1 WHERE postword = Bword AND preword = Aword;
+END IF;
+END //
+
+DELIMITER ;

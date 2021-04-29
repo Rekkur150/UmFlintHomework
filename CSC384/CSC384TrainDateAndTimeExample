@@ -1,0 +1,669 @@
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(
+--------
+
+
+
+TO_CHAR(SYSDATE,'MONTH:DAY:YEAR')                                                                                   
+--------------------------------------------------------------------------------------------------------------------
+FEBRUARY :MONDAY   :TWENTY TWENTY
+
+
+TO_CHAR(SYSDATE,'MONTH:DAY:YY')                                             
+----------------------------------------------------------------------------
+FEBRUARY :MONDAY   :20
+
+
+TO_CHAR(SYSDATE,'MONTH:DAY:YYYY')                                             
+------------------------------------------------------------------------------
+FEBRUARY :MONDAY   :2020
+
+
+TO_CHAR(SYSDATE,'MON
+--------------------
+Feb:03:2020
+
+
+TO_CHAR(SYSDATE,'MON:DD:YYYY:
+-----------------------------
+Feb:03:2020:11:19:48
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH
+-----------------------------
+Feb 03,2020 11:20:08
+
+
+Table TRAINSCHEDULE created.
+
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+Error starting at line : 11 in command -
+SELECT TO_CHAR(sysdate, 'Mon DD,YYYY H:MI:SS') from dual
+Error report -
+ORA-01821: date format not recognized
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:21:26
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.07
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.09
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.10
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.10
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.10
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.11
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.11
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.12
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.12
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.12
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.12
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.12
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.13
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.13
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:22.13
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:25.19
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:28.13
+
+
+1 row inserted.
+
+
+TRA STOP                 TIMEREAC TO_CHAR(TIMEREACHED,'MONDD,YY@
+--- -------------------- -------- ------------------------------
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:29.34
+
+
+1 row inserted.
+
+SP2-0552: Bind variable "SS" not declared.
+
+0 rows inserted.
+
+
+Error starting at line : 1 in command -
+CREATE TABLE trainSchedule (
+    trainNumber CHAR(3),
+    stop VARCHAR(20),
+    timeReached DATE
+)
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+     (1+4)
+----------
+         5
+
+
+SYSDATE 
+--------
+20-02-03
+
+
+TO_CHAR(SYSDATE,'MONDD,YYYYHH:
+------------------------------
+Feb 03, 2020 11:29.40
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+TRA STOP                 TIMEREAC TO_CHAR(TIMEREACHED,'MONDD,YY@
+--- -------------------- -------- ------------------------------
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 08:29:35         
+
+6 rows selected. 
+
+
+1 row inserted.
+
+
+TRA STOP                 TIMEREAC TO_CHAR(TIMEREACHED,'MONDD,YY@
+--- -------------------- -------- ------------------------------
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 20 @ 08:29:35         
+354 Flint                20-02-02 Feb 02, 20 @ 08:29:35         
+
+7 rows selected. 
+
+
+TRA STOP                 TIMEREAC TO_CHAR(TIMEREACHED,'MONDD,YYYY@
+--- -------------------- -------- --------------------------------
+354 Flint                20-02-02 Feb 02, 2020 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 2020 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 2020 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 2020 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 2020 @ 07:30:00         
+354 Flint                20-02-02 Feb 02, 2020 @ 08:29:35         
+354 Flint                20-02-02 Feb 02, 2020 @ 08:29:35         
+
+7 rows selected. 
+

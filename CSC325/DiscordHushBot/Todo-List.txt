@@ -1,0 +1,7 @@
+1. Create a way to flag people's chat.
+2. Setup automatic roll assignment when a user joins a guild
+3. Setup automatic chat monitoring.
+  3.1 Setup bad bot and good bot functionality.
+  3.2 Figure out statistics for words and confidence levels.
+4. GET ALOT OF DATA FOR MEH BOT
+5. Setup timed punishments for users. 

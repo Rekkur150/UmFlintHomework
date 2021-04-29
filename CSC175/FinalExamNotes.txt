@@ -1,0 +1,256 @@
+Final Exam Notes for 
+CSC 175
+
+Final Exam is 12/11/2017
+
+Class and structures 
+
+Object's data and functions are all contained in an object, the code for a object is all stored in one area for easy access.
+Procedual No data stored or functions contained with in any variables.
+
+Objects allow importation of code for ease of use, for instance importing the vector class in standard template library. With importing you don't care how it work, or need to understand how it works, just the prototypes that go along with it.
+
+Memory leak, when the program starts taking memory away from the operating system with out giving it back when not in use. Causes a memory leak.
+
+On Test -> Creating a Structor/Class, Walking an array, functions, if.
+
+Procedure is when a function returns void.
+
+Parameters for a function is void function1(int a) would be "a"
+Arguement for a function would be the data you send into the function, so function1(10) "10" would the arguement.
+
+Functions create seperate scope of execution.
+Passing by value creates a douplicate varible that gets removed after the function is done.
+Passing by reference is faster than passing by value.
+Passing by reference passes pointers to the function.
+Passing by reference is technically passing by value, however, the value that is passed to the function is considerably smaller than what you would be passing if you passed by value.
+
+Pointers point to the memory addresses.
+
+To pass by reference function(int &a) {//Do Stuff}
+To pass by reference but don't care the value that was passed to the function
+			function(const int &a) {//Can't change a}
+
+In order to get a program to run it needs to look at the main function before the code starts to run.
+When compling C++ source code, it makes its own code for the hardward on that computer, however, Java is universal the complied code could run on any computer instead of just one.
+
+Java complies it to bit code. Which can be run on the java virtual machine.
+Java is slower than C++
+Java is not machine specific.
+
+C++ is specific to the operating system and machine.
+Exe files are different based on operating system.
+
+C++ gives you the power of the operating system, where you can access direct memory, instead of Java where you are stuck with the virtual machine memory. 
+
+We convered that IntStack we made in class to a vector class by changing the int variable type to a vector varible type.
+
+C++ IS CASE SENSITIVE
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+const int SIZE = 10;
+
+struct Jim { // Struct everthing is public unless told otherwise with "private:"
+
+};
+
+class Person { //Classes everything is private unless told otherwise with "public:"
+
+private:
+	string name; // Encapsulating making things only the object itself can see, everything that is private only the object can change or see.
+	int age;
+	int weight;
+
+public:
+	// SHOULD USE ACCESSORS AND MUTATORS
+
+	// The following below are prototypes
+	void set_name(string name_in); //Mutator because it is changing the data in the object
+	void set_age(int age_in); //Mutator
+	void set_weight(int weight_in); //Mutator
+	string get_name(); //Accessor because it gets the data from the object
+	int get_age();	//Accessor
+	int get_weight(); //Accessor
+
+	//Using accessors and mutators allows you can control and restrict ages or names and such, for instance I could make sure the age isn't below 0
+
+};
+
+//The following below are function definitions for the prototypes in the Person class
+
+void Person::set_name(string name_in) {
+	name = name_in;
+}
+
+void Person::set_age(int age_in) {
+	age = age_in;
+}
+
+void Person::set_weight(int weight_in) {
+	weight = weight_in;
+}
+
+string Person::get_name() {
+	return name;
+}
+
+int Person::get_age() {
+	return age;
+}
+
+int Person::get_weight() {
+	return weight;
+}
+
+// END OF FUNCTION DEFINITION FOR PERSON CLASS
+
+void func1(Person p_in) {
+	cout << p_in.get_name() << endl;
+}
+
+int main() {
+	
+	vector<Person> my_person_array;
+	cout << "my_person_array.size*() = " << my_person_array.size() << endl;
+
+	Person my_person;
+
+	my_person.set_name("Fred");
+	my_person.set_age(21);
+	my_person.set_weight(150);
+
+	my_person_array.push_back(my_person);
+
+	my_person.set_name("Frodo");
+	my_person.set_age(17);
+	my_person.set_weight(110);
+
+	my_person_array.push_back(my_person);
+	my_person_array.push_back(my_person);
+
+	cout << "my_person_array.size*() = " << my_person_array.size() << endl;
+
+	//vector object did all the work for us, we didn't need to do anything.
+	//vector has basically given us a dynamic array.
+
+	for (int i = 0; i < my_person_array.size(); i++) {
+		cout << "my_person_array["<< i << "].name = " << my_person_array[i].get_name() << endl;
+		cout << "my_person_array["<< i << "].name = " << my_person_array[i].get_age() << endl;
+		cout << "my_person_array["<< i << "].name = " << my_person_array[i].get_weight() << endl;
+	}
+	return 0;
+
+	int scores[SIZE];
+	int scoreTotal = 0;
+
+	for (int i = 0; i < SIZE; i++) {
+		scoreTotal += scores[i];
+	}
+
+	return 0;
+}	
+
+
+NEW PROGRAM
+
+#include <iostream>
+using namespace std;
+
+
+class Engine {
+private:
+	int numberOfCylinders;
+	int cubicInches;
+
+public:
+
+	Engine(int numberOfCylindersIn, int cubicInchesIn);
+
+	int getHorsepower();
+	void display();
+};
+
+	//:: is the scope resolution operator
+Engine::Engine(int numberOfCylindersIn, int cubicInchesIn) {
+	numberOfCylinders = numberOfCylindersIn;
+	cubicInches = cubicInchesIn;
+}
+
+int Engine::getHorsepower() {
+	return numberOfCylinders * cubicInches;
+}
+
+void Engine:display() {
+	cout << "Cylinders = " << numberOfCylinders << endl
+	     << "Cubic Inches = " << cubicInches << endl
+	     << "Horse Power = " << getHorsepower() << endl;
+}
+
+class Car {
+
+private:
+
+	string make;
+	string model;
+	int year;
+	Engine motor;
+
+public:
+
+	Car(string makeIn,string modelIn,int yearIn, Engine motorIn);
+	
+	string getMake();
+	string getModel();
+	int getYear();
+	void display();
+};
+
+Car::Car(string makeIn, string modelIn, int yearIn, Engine motorIn) {
+	make = makeIn;
+	model = modelIn;
+	year = yearIn;
+	motor = motorIn;
+}
+
+string Car::getMake() {
+	return make;
+}
+
+string Car::getModel() {
+	return model;
+}
+
+string Car::getYear() {
+	return year;
+}
+
+void Car::display() {
+	cout << "Make = " << make << endl
+		"Model = " << model << endl
+		"Year = " << year << endl;
+		motor.display();
+}
+
+
+int main() {
+
+	Engine motor(8,350);
+	Car jack("Chevy","s10","2000",motor);
+	jack.display();
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
